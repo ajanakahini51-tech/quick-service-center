@@ -106,3 +106,63 @@
   .service-pro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-pro-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Mobile booking layout fix */
+@media (max-width: 600px) {
+  .booking-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+  }
+
+  .booking-layout > * {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    position: relative !important;
+    inset: auto !important;
+  }
+
+  .booking-section {
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .booking-copy,
+  .pro-form-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 0 16px !important;
+  }
+
+  .pro-form-card form,
+  .form-grid {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .form-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+
+  .form-grid input,
+  .form-grid select,
+  .form-grid textarea,
+  .form-grid button {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .area-strip,
+  .service-areas {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 16px !important;
+    overflow: visible !important;
+  }
+}
