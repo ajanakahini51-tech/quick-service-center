@@ -232,3 +232,40 @@ html.desktop-mode #desktop-mode-control {
     position: sticky;
     top: 0;
 }
+/* Mobile Booking Form Fix - Desktop Design Unchanged */
+@media screen and (max-width: 600px) {
+  .booking-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 20px !important;
+  }
+
+  .booking-copy,
+  .pro-form-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .pro-form-grid,
+  .form-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+  }
+
+  .pro-form-card input,
+  .pro-form-card select,
+  .pro-form-card textarea,
+  #proBookingForm input,
+  #proBookingForm select,
+  #proBookingForm textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
