@@ -293,3 +293,92 @@ setupBookingForm('proBookingForm', 'pb');
   checkDesktopSite();
   window.addEventListener('resize', checkDesktopSite);
 })();
+
+/* Quick Service Center - Desktop Site Required */
+(function () {
+  const css = document.createElement("style");
+
+  css.textContent = `
+    #qsc-desktop-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #f3f7fb;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #qsc-desktop-gate .qsc-box {
+      max-width: 360px;
+      padding: 25px 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.12);
+    }
+
+    #qsc-desktop-gate h2 {
+      color: #063c68;
+      font-size: 23px;
+    }
+
+    #qsc-desktop-gate p {
+      color: #34495e;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    #qsc-desktop-gate .qsc-step {
+      padding: 14px;
+      background: #e8f3ff;
+      border-radius: 10px;
+      color: #063c68;
+      line-height: 1.8;
+      font-weight: bold;
+    }
+
+    html.qsc-desktop-required body > *:not(#qsc-desktop-gate) {
+      display: none !important;
+    }
+  `;
+
+  document.head.appendChild(css);
+
+  function checkDesktopSite() {
+    const mobile = window.innerWidth <= 600;
+    let gate = document.getElementById("qsc-desktop-gate");
+
+    if (mobile) {
+      document.documentElement.classList.add("qsc-desktop-required");
+
+      if (!gate) {
+        gate = document.createElement("div");
+        gate.id = "qsc-desktop-gate";
+
+        gate.innerHTML = `
+          <div class="qsc-box">
+            <h2>Quick Service Center</h2>
+            <p>ওয়েবসাইটটি ব্যবহার করতে Chrome-এ Desktop site চালু করুন।</p>
+            <div class="qsc-step">
+              ১. Chrome-এর উপরের তিনটি ডট (⋮) চাপুন।<br>
+              ২. Desktop site-এ টিক দিন।<br>
+              ৩. ওয়েবসাইটটি আবার দেখুন।
+            </div>
+          </div>
+        `;
+
+        document.body.appendChild(gate);
+      }
+    } else {
+      document.documentElement.classList.remove("qsc-desktop-required");
+      if (gate) gate.remove();
+    }
+  }
+
+  checkDesktopSite();
+  window.addEventListener("resize", checkDesktopSite);
+})();
