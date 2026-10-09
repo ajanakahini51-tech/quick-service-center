@@ -166,3 +166,32 @@
     overflow: visible !important;
   }
 }
+@media (max-width: 600px) {
+  .booking-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .booking-layout > * {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    position: relative !important;
+    float: none !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .area-strip,
+  .service-areas {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 16px !important;
+    overflow: visible !important;
+  }
+}
