@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick Service Center</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page" id="top">
+  <img class="reference" src="assets/reference-homepage.png" alt="Quick Service Center">
+
+  <div class="review-overlay" id="reviewOverlay" aria-label="Customer Reviews">
+    <div class="review-content">
+      <img id="reviewPhoto" class="review-photo" src="assets/review_rakesh.jpg" alt="Customer">
+      <div class="review-copy">
+        <div id="reviewName" class="review-name">Rakesh Mondal</div>
+        <div class="review-stars">★★★★★</div>
+        <div id="reviewText" class="review-text">খুব ভালো সার্ভিস, সময় মত কাজ হয়েছে।</div>
+      </div>
+    </div>
+  </div>
+
+<div class="hotspots">
+    <a class="hot home" href="#top"></a>
+    <a class="hot about" href="#about-section"></a>
+    <a class="hot services" href="#services"></a>
+    <a class="hot booking-nav" href="#booking-section"></a>
+    <a class="hot gallery-nav" href="#gallery"></a>
+    <a class="hot contact-nav" href="#contact"></a>
+    <a class="hot call" href="tel:+918101368998"></a>
+    <a class="hot wa" href="https://wa.me/918101368998?text=Hello%20Quick%20Service%20Center%2C%20I%20need%20home%20appliance%20service." target="_blank"></a>
+
+    <!-- ONLY ONE real booking form. The reference image already contains the blue heading, so no second heading is added. -->
+    <div class="inline-booking" id="booking">
+      <form id="inlineBookingForm">
+        <div class="form-grid">
+          <label>Your Name <em>*</em><input id="ibName" required placeholder="Enter your name"></label>
+          <label>Mobile Number <em>*</em><input id="ibMobile" required type="tel" inputmode="numeric" placeholder="Enter mobile number"></label>
+          <label>Address <em>*</em><input id="ibAddress" required placeholder="Enter your full address"></label>
+          <label>Preferred Date <span>(Optional)</span><input id="ibDate" type="date"></label>
+          <label>Select Appliance <em>*</em><select id="ibAppliance" required><option value="">-- Select Appliance --</option><option>AC</option><option>Fridge</option><option>Washing Machine</option><option>Geyser</option><option>Microwave</option><option>Kitchen Chimney</option><option>Water Purifier</option></select></label>
+          <label>Preferred Time <span>(Optional)</span><select id="ibTime"><option value="">-- Select Time --</option><option>Morning (9 AM - 12 PM)</option><option>Afternoon (12 PM - 3 PM)</option><option>Evening (3 PM - 6 PM)</option><option>Night (6 PM - 8 PM)</option></select></label>
+        </div>
+        <label class="problem">Problem Description <em>*</em><textarea id="ibProblem" required placeholder="Describe the problem"></textarea></label>
+        <button type="submit">➤ &nbsp; Submit Booking</button>
+      </form>
+    </div>
+
+    <a class="service-hot ac" href="#booking-section" data-appliance="AC"></a>
+    <a class="service-hot fridge" href="#booking-section" data-appliance="Fridge"></a>
+    <a class="service-hot wm" href="#booking-section" data-appliance="Washing Machine"></a>
+    <a class="service-hot geyser" href="#booking-section" data-appliance="Geyser"></a>
+    <a class="service-hot micro" href="#booking-section" data-appliance="Microwave"></a>
+    <a class="service-hot chimney" href="#booking-section" data-appliance="Kitchen Chimney"></a>
+    <a class="service-hot ro" href="#booking-section" data-appliance="Water Purifier"></a>
+
+    <a class="hot footer-call" href="tel:+918101368998"></a>
+    <a class="hot footer-wa" href="https://wa.me/918101368998" target="_blank"></a>
+    <a class="hot map" href="https://maps.app.goo.gl/XtmM4urprairUSoe6" target="_blank"></a>
+  </div>
+</div>
+
+<section class="professional-sections" aria-label="Website information">
+  <section id="about-section" class="pro-section about-section">
+    <div class="pro-container">
+      <div class="section-kicker">ABOUT QUICK SERVICE CENTER</div>
+      <h2>Reliable Home Appliance Service at Your Doorstep</h2>
+      <p class="lead">Quick Service Center provides professional repair, service, installation and maintenance for major home appliances across Kushtia, Tehatta, Nadia and nearby areas.</p>
+      <div class="pro-cards three">
+        <article><div class="pro-icon">⚙</div><h3>Experienced Technicians</h3><p>Skilled service support with a focus on safe, dependable workmanship.</p></article>
+        <article><div class="pro-icon">✓</div><h3>Genuine Parts</h3><p>Quality replacement parts and clear information before repair work.</p></article>
+        <article><div class="pro-icon">₹</div><h3>Transparent Pricing</h3><p>Clear service communication so customers know what they are paying for.</p></article>
+      </div>
+      <div class="area-strip"><strong>Service Area:</strong> Kushtia • Tehatta • Palashipara • Chander Ghat • Barnia • Betai • Harnagar • Harinarayanpur • Palsanda • Barui Para & nearby areas</div>
+    </div>
+  </section>
+
+  <section id="services" class="pro-section services-section">
+    <div class="pro-container">
+      <div class="section-kicker">OUR SERVICES</div>
+      <h2>Home Appliance Repair & Service</h2>
+      <div class="service-pro-grid">
+        <article><img src="assets/ac.png"><h3>AC</h3><p>Repair • Service • Installation</p><a href="#booking-section" data-pro-appliance="AC">Book Service →</a></article>
+        <article><img src="assets/fridge.png"><h3>Fridge</h3><p>Repair • Service • Maintenance</p><a href="#booking-section" data-pro-appliance="Fridge">Book Service →</a></article>
+        <article><img src="assets/wm.png"><h3>Washing Machine</h3><p>Repair • Service • Installation</p><a href="#booking-section" data-pro-appliance="Washing Machine">Book Service →</a></article>
+        <article><img src="assets/geyser.png"><h3>Geyser</h3><p>Repair • Service • Installation</p><a href="#booking-section" data-pro-appliance="Geyser">Book Service →</a></article>
+        <article><img src="assets/micro.png"><h3>Microwave</h3><p>Repair • Service</p><a href="#booking-section" data-pro-appliance="Microwave">Book Service →</a></article>
+        <article><img src="assets/chimney.png"><h3>Kitchen Chimney</h3><p>Repair • Service • Cleaning</p><a href="#booking-section" data-pro-appliance="Kitchen Chimney">Book Service →</a></article>
+        <article><img src="assets/ro.png"><h3>Water Purifier</h3><p>Repair • Service • Maintenance</p><a href="#booking-section" data-pro-appliance="Water Purifier">Book Service →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking-section" class="pro-section booking-section">
+    <div class="pro-container booking-layout">
+      <div class="booking-copy"><div class="section-kicker">BOOK A SERVICE</div><h2>Schedule a Service Request</h2><p>Share your appliance and problem details. We will contact you on WhatsApp.</p><ul><li>Quick response</li><li>Doorstep service</li><li>Service for major home appliances</li><li>Serving Kushtia, Tehatta, Palashipara, Chander Ghat, Barnia, Betai, Harnagar, Harinarayanpur, Palsanda, Barui Para & nearby areas</li></ul></div>
+      <div class="pro-form-card"><div class="form-title">Book a Service</div><form id="proBookingForm">
+        <div class="pro-form-grid"><label>Your Name *<input id="pbName" required placeholder="Enter your name"></label><label>Mobile Number *<input id="pbMobile" required type="tel" placeholder="Enter mobile number"></label><label>Address *<input id="pbAddress" required placeholder="Enter your full address"></label><label>Preferred Date<input id="pbDate" type="date"></label><label>Select Appliance *<select id="pbAppliance" required><option value="">-- Select Appliance --</option><option>AC</option><option>Fridge</option><option>Washing Machine</option><option>Geyser</option><option>Microwave</option><option>Kitchen Chimney</option><option>Water Purifier</option></select></label><label>Preferred Time<select id="pbTime"><option value="">-- Select Time --</option><option>Morning (9 AM - 12 PM)</option><option>Afternoon (12 PM - 3 PM)</option><option>Evening (3 PM - 6 PM)</option><option>Night (6 PM - 8 PM)</option></select></label></div>
+        <label>Problem Description *<textarea id="pbProblem" required placeholder="Describe the problem"></textarea></label><button type="submit">➤ &nbsp; Submit Booking on WhatsApp</button>
+      </form></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="pro-section gallery-section">
+    <div class="pro-container"><div class="section-kicker">GALLERY</div><h2>Our Service Gallery</h2><p class="lead">A glimpse of professional appliance service and doorstep support.</p><div class="gallery-pro-grid"><div><img src="assets/ac.png"><span>AC Service</span></div><div><img src="assets/fridge.png"><span>Fridge Service</span></div><div><img src="assets/wm.png"><span>Washing Machine</span></div><div><img src="assets/geyser.png"><span>Geyser Service</span></div><div><img src="assets/micro.png"><span>Microwave Service</span></div><div><img src="assets/chimney.png"><span>Kitchen Chimney</span></div><div><img src="assets/ro.png"><span>Water Purifier</span></div></div></div>
+  </section>
+
+  <section id="contact" class="pro-section contact-section">
+    <div class="pro-container"><div class="section-kicker">CONTACT US</div><h2>Let's Get Your Appliance Working Again</h2><div class="contact-grid"><div class="contact-card"><div class="contact-icon">☎</div><h3>Call Now</h3><a href="tel:+918101368998">8101368998</a><p>For service enquiries and support.</p></div><div class="contact-card"><div class="contact-icon">◉</div><h3>WhatsApp</h3><a target="_blank" href="https://wa.me/918101368998">Chat with Quick Service Center</a><p>Send your service requirement directly.</p></div><div class="contact-card"><div class="contact-icon">📍</div><h3>Service Area</h3><p>Kushtia, Tehatta, Nadia<br>PIN 741160<br>Palashipara, Chander Ghat, Barnia, Betai, Harnagar, Harinarayanpur, Palsanda, Barui Para & nearby areas</p><a target="_blank" href="https://maps.app.goo.gl/XtmM4urprairUSoe6">Open in Google Maps →</a></div></div></div>
+  </section>
+</section>
+<div class="pro-back"><a href="#top">↑ Back to Home</a></div>
+<script src="script.js"></script>
+</body>
+</html>

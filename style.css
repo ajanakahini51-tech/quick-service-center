@@ -1,0 +1,67 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;font-family:Arial,"Noto Sans Bengali",sans-serif}.page{position:relative;width:100%;max-width:1024px;margin:0 auto;line-height:0}.reference{display:block;width:100%;height:auto}.hotspots{position:absolute;inset:0}.hot,.service-hot{position:absolute;display:block;background:transparent;border:0;cursor:pointer}.home{left:49.5%;top:.9%;width:7%;height:4%}.about{left:58%;top:.9%;width:8%;height:4%}.services{left:67%;top:.9%;width:8%;height:4%}.booking-nav{left:76%;top:.9%;width:8%;height:4%}.gallery-nav{left:84%;top:.9%;width:7%;height:4%}.contact-nav{left:92%;top:.9%;width:7%;height:4%}.call{left:4%;top:19.4%;width:16%;height:4.5%}.wa{left:20.5%;top:19.4%;width:24%;height:4.5%}
+/* The source artwork already contains the blue Book a Service header. This overlay starts BELOW it. */
+.inline-booking{position:absolute;left:2%;top:60.45%;width:48.5%;height:16.0%;padding:11px 18px 7px;z-index:5;line-height:normal;background:transparent}.inline-booking form{width:100%;height:100%;margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:18px;row-gap:5px}.inline-booking label{display:block;font-size:11px;font-weight:700;color:#163c5c;line-height:1.1}.inline-booking em{font-style:normal;color:#ed2525}.inline-booking label span{font-weight:400;color:#6d7780;font-size:9px}.inline-booking input,.inline-booking select{display:block;width:100%;height:27px;border:1px solid #d5e1ea;border-radius:6px;padding:4px 8px;margin:3px 0 0;font:12px Arial,sans-serif;background:#fff;color:#173b5c}.inline-booking input::placeholder,.inline-booking textarea::placeholder{color:#8a9298}.inline-booking .problem{margin-top:4px}.inline-booking textarea{display:block;width:100%;height:31px;border:1px solid #d5e1ea;border-radius:6px;padding:5px 8px;margin:3px 0 4px;font:12px Arial,sans-serif;resize:none;background:#fff;color:#173b5c}.inline-booking button{display:block;width:100%;height:31px;border:0;border-radius:6px;background:#ef2525;color:#fff;font:700 14px Arial,sans-serif;cursor:pointer;box-shadow:none}.service-hot{top:34.2%;height:12.7%;width:13.5%}.service-hot.ac{left:.7%}.service-hot.fridge{left:14.8%}.service-hot.wm{left:29%}.service-hot.geyser{left:43.1%}.service-hot.micro{left:57.3%}.service-hot.chimney{left:71.4%}.service-hot.ro{left:85.5%}.footer-call{left:49%;top:88.6%;width:14%;height:3%}.footer-wa{left:49%;top:91.7%;width:14%;height:3%}.map{right:2.2%;top:88%;width:13.5%;height:7%}
+@media(max-width:600px){.inline-booking{left:2%;top:60.45%;width:48.5%;height:16%;padding:7px 9px 4px}.form-grid{column-gap:7px;row-gap:3px}.inline-booking label{font-size:7px}.inline-booking label span{font-size:6px}.inline-booking input,.inline-booking select{height:19px;font-size:7px;padding:2px 5px;margin-top:2px}.inline-booking .problem{margin-top:2px}.inline-booking textarea{height:23px;font-size:7px;padding:3px 5px;margin-top:2px;margin-bottom:2px}.inline-booking button{height:22px;font-size:9px}}
+
+/* Professional navigation pages — homepage artwork remains unchanged */
+.professional-sections{background:#f6f9fc;color:#123b63;line-height:1.5}
+.pro-section{padding:76px 20px;scroll-margin-top:18px}
+.pro-container{max-width:1100px;margin:0 auto}
+.section-kicker{font-size:12px;font-weight:800;letter-spacing:2.2px;color:#e9322d;margin-bottom:8px}
+.pro-section h2{margin:0 0 12px;font-size:34px;line-height:1.15;color:#083f70}
+.lead{font-size:16px;line-height:1.7;max-width:800px;color:#53687a}
+.about-section{background:#fff}
+.pro-cards{display:grid;gap:18px;margin-top:30px}.pro-cards.three{grid-template-columns:repeat(3,1fr)}
+.pro-cards article,.contact-card,.pro-form-card{background:#fff;border:1px solid #dce8f1;border-radius:16px;box-shadow:0 10px 30px rgba(9,50,82,.08)}
+.pro-cards article{padding:24px}.pro-icon{width:48px;height:48px;border-radius:13px;background:#eaf4ff;color:#0870c7;display:grid;place-items:center;font-size:25px;font-weight:800}.pro-cards h3{margin:15px 0 6px}.pro-cards p{margin:0;color:#637487;font-size:14px}.area-strip{margin-top:24px;background:#063c68;color:#fff;border-radius:12px;padding:14px 18px;font-size:13px}
+.services-section{background:#f6faff}.service-pro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.service-pro-grid article{background:#fff;border:1px solid #deebf5;border-radius:15px;padding:18px;text-align:center;box-shadow:0 8px 24px rgba(9,50,82,.07)}.service-pro-grid img{width:100%;height:130px;object-fit:contain}.service-pro-grid h3{margin:9px 0 3px}.service-pro-grid p{font-size:12px;color:#687989;margin:0 0 13px}.service-pro-grid a{display:inline-block;background:#086cc0;color:#fff;text-decoration:none;border-radius:7px;padding:8px 13px;font-size:12px;font-weight:700}
+.booking-section{background:#fff}.booking-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}.booking-copy{padding:18px 5px}.booking-copy ul{padding-left:20px;line-height:2;color:#526779}.pro-form-card{overflow:hidden}.form-title{background:linear-gradient(90deg,#063c68,#0875bd);color:#fff;font-size:22px;font-weight:800;padding:18px 22px}.pro-form-card form{padding:22px}.pro-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.pro-form-card label{font-size:12px;font-weight:700;color:#31516b}.pro-form-card input,.pro-form-card select,.pro-form-card textarea{width:100%;margin-top:6px;border:1px solid #d4e1ea;border-radius:8px;padding:11px;font:14px Arial,sans-serif;color:#173b5c;background:#fff}.pro-form-card textarea{height:100px;resize:vertical}.pro-form-card form>label{display:block;margin-top:15px}.pro-form-card button{margin-top:15px;width:100%;border:0;border-radius:8px;padding:13px;background:#ed2525;color:#fff;font-size:15px;font-weight:800;cursor:pointer}
+.gallery-section{background:#f6faff}.gallery-pro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.gallery-pro-grid div{background:#fff;border:1px solid #dce8f1;border-radius:14px;padding:12px;box-shadow:0 8px 20px rgba(9,50,82,.06)}.gallery-pro-grid img{width:100%;height:130px;object-fit:contain}.gallery-pro-grid span{display:block;text-align:center;font-weight:700;margin-top:7px}
+.contact-section{background:linear-gradient(135deg,#06375e,#082b47);color:#fff}.contact-section h2{color:#fff}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.contact-card{padding:24px;color:#123b63}.contact-icon{font-size:28px;color:#0873c2}.contact-card h3{margin:9px 0}.contact-card a{color:#086cc0;font-weight:800;text-decoration:none}.contact-card p{font-size:13px;color:#637487}.pro-back{text-align:center;background:#032d4f;padding:16px}.pro-back a{color:#fff;text-decoration:none;font-weight:700}
+@media(max-width:800px){.pro-section{padding:55px 16px}.pro-section h2{font-size:27px}.pro-cards.three,.booking-layout,.contact-grid{grid-template-columns:1fr}.service-pro-grid{grid-template-columns:repeat(2,1fr)}.gallery-pro-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.service-pro-grid{grid-template-columns:1fr}.gallery-pro-grid{grid-template-columns:1fr}.pro-form-grid{grid-template-columns:1fr}}
+
+/* Customer Reviews overlay: only the photo, name and review text change. */
+.review-overlay{
+  position:absolute;
+  left:64.0%;
+  top:78.65%;
+  width:30.0%;
+  height:6.45%;
+  z-index:20;
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  line-height:normal;
+  pointer-events:none;
+}
+.review-content{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 6px 7px 8px;
+}
+.review-photo{
+  flex:0 0 auto;
+  width:16%;
+  min-width:42px;
+  max-width:52px;
+  aspect-ratio:1/1;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+.review-copy{min-width:0;flex:1;overflow:hidden}
+.review-name{font-size:15px;line-height:1.05;font-weight:800;color:#111827;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.review-stars{margin-top:3px;color:#f2b400;font-size:14px;line-height:1;letter-spacing:1px}
+.review-text{margin-top:5px;font-family:Arial,"Noto Sans Bengali",sans-serif;font-size:14px;line-height:1.25;color:#273746;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+@media(max-width:600px){
+  .review-overlay{border-radius:10px;}
+  .review-content{gap:4px;padding:3px 4px 3px 5px;}
+  .review-photo{min-width:20px;max-width:28px;}
+  .review-name{font-size:8px}
+  .review-stars{font-size:8px;letter-spacing:.4px;margin-top:1px}
+  .review-text{font-size:7.5px;line-height:1.15;margin-top:2px}
+}
