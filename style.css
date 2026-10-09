@@ -195,3 +195,40 @@
     overflow: visible !important;
   }
 }
+/* Desktop Mode Toggle */
+#desktop-mode-control {
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#desktop-mode-control label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+#desktopModeToggle {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+html.desktop-mode body {
+    min-width: 1000px !important;
+}
+
+html.desktop-mode .page {
+    width: 1000px !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+html.desktop-mode #desktop-mode-control {
+    position: sticky;
+    top: 0;
+}
