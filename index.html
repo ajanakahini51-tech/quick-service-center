@@ -8,11 +8,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="desktop-mode-control" style="background:#073b5e;color:white;padding:10px;text-align:center;font-family:Arial,sans-serif;">
-  <label style="cursor:pointer;font-weight:bold;">
-    <input type="checkbox" id="desktopModeToggle">
-    🖥️ Turn On Desktop Mode
-  </label>
+ <div id="desktop-mode-control" style="display:none;"></div>
+
+<div id="desktop-mode-popup" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:99999;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;font-family:Arial,sans-serif;">
+  <div style="background:white;border-radius:18px;padding:25px 20px;max-width:420px;width:100%;text-align:center;box-sizing:border-box;">
+    <div style="font-size:60px;">🖥️</div>
+    <h2 style="color:#123c60;margin:10px 0;">Desktop Mode চালু করুন</h2>
+    <p style="font-size:16px;line-height:1.7;color:#333;">আমাদের ওয়েবসাইট কম্পিউটারের মতো দেখতে Chrome-এর Desktop site চালু করুন।</p>
+    <div style="background:#eef6ff;border-radius:12px;padding:15px;text-align:left;line-height:1.9;">
+      <b>কীভাবে চালু করবেন?</b><br>
+      ১. Chrome-এর উপরের তিন ডট (⋮) চাপুন।<br>
+      ২. Desktop site অপশনে টিক দিন।<br>
+      ৩. ওয়েবসাইটটি আবার লোড করুন।
+    </div>
+    <button onclick="document.getElementById('desktop-mode-popup').style.display='none'" style="width:100%;margin-top:18px;padding:14px;background:#0875e1;color:white;border:0;border-radius:10px;font-size:16px;font-weight:bold;cursor:pointer;">বুঝেছি, চালু করব</button>
+  </div>
 </div>
 <div class="page" id="top">
   <img class="reference" src="assets/reference-homepage.png" alt="Quick Service Center">
