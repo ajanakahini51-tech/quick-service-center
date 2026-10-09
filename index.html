@@ -119,5 +119,23 @@
 </section>
 <div class="pro-back"><a href="#top">↑ Back to Home</a></div>
 <script src="script.js"></script>
+  <script>
+(function () {
+  const toggle = document.getElementById('desktopModeToggle');
+  if (!toggle) return;
+
+  toggle.addEventListener('change', function () {
+    document.documentElement.classList.toggle(
+      'desktop-mode',
+      toggle.checked
+    );
+
+    const label = toggle.parentElement;
+    label.lastChild.textContent = toggle.checked
+      ? ' 🖥️ Desktop Mode ON'
+      : ' 🖥️ Turn On Desktop Mode';
+  });
+})();
+</script>
 </body>
 </html>
